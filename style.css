@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.logo {
+  width: 180px;
+  cursor: pointer;
+}
+.right ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.right ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+.download {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  gap: 30px;
+  text-align: center;
+}
+.download :first-child {
+  font-size: 40px;
+  font-weight: 600;
+}
+button {
+  background-color: #00b6d1;
+  color: white;
+  border-style: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.lang {
+  background-color: #f9f9f9;
+  padding: 23px;
+  border-radius: 4px;
+  text-align: center;
+}
+.grid {
+  width: 70vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+.first {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 38px;
+}
+.second button {
+  font-size: 12px;
+  padding: 8px 15px;
+}
+.second :nth-child(2) {
+  background-color: #5cb85c;
+}
+
+.second button a {
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width: 500px) {
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+  }
+}
